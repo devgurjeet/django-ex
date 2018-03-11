@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo App</title>
+</head>
+<body>
+	<h1>Demo App.</h1>
+    <ul>
+        {% for demo in demos %}
+            <li>
+                <h3><span style="color: blue">ID:</span> {{demo.id}} | <span style="color: blue">Name: </span>{{demo.name}} |  <span style="color: blue">Description:</span> {{demo.description}} </h3>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
